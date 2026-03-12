@@ -3,11 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Department of Homeland Security</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Homepage</h1>
-    <p>Current Date and Time (UTC): 2026-03-12 22:24:39</p>
-    <p>Current User's Login: grandgames2025-hash</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🛡️ DHS</h1>
+                <span class="subtitle">Department of Homeland Security</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#divisions" class="nav-link">Divisions</a></li>
+                <li><a href="#recruitment" class="nav-link">Join Us</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Department of Homeland Security</h1>
+            <p>Protecting Our Nation, Serving Our Communities</p>
+            <div class="hero-buttons">
+                <a href="#recruitment" class="btn btn-primary">Apply Now</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About DHS</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>The Department of Homeland Security is a federal agency dedicated to protecting the nation from threats and ensuring the security of our borders, infrastructure, and communities.</p>
+                    <p>Our mission is to defend the United States against terrorism, manage our borders, enforce immigration laws, and provide disaster relief assistance.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <p>Operations</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Commitment</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Shield</h3>
+                        <p>Protection</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divisions Section -->
+    <section id="divisions" class="divisions">
+        <div class="container">
+            <h2>Our Divisions</h2>
+            <div class="divisions-grid">
+                <div class="division-card">
+                    <div class="division-icon">🚁</div>
+                    <h3>Air & Marine</h3>
+                    <p>Protects our borders through air and maritime surveillance and enforcement operations.</p>
+                </div>
+                <div class="division-card">
+                    <div class="division-icon">🚗</div>
+                    <h3>Border Patrol</h3>
+                    <p>Monitors and secures our national borders against illegal crossing and contraband.</p>
+                </div>
+                <div class="division-card">
+                    <div class="division-icon">🔍</div>
+                    <h3>Investigation</h3>
+                    <p>Conducts federal investigations to identify and prevent threats to national security.</p>
+                </div>
+                <div class="division-card">
+                    <div class="division-icon">💳</div>
+                    <h3>Customs</h3>
+                    <p>Regulates and facilitates international trade while enforcing customs laws.</p>
+                </div>
+                <div class="division-card">
+                    <div class="division-icon">🏥</div>
+                    <h3>Emergency Management</h3>
+                    <p>Prepares for, responds to, and recovers from disasters and emergencies.</p>
+                </div>
+                <div class="division-card">
+                    <div class="division-icon">🔐</div>
+                    <h3>Cybersecurity</h3>
+                    <p>Protects critical infrastructure and government systems from cyber threats.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section id="requirements" class="requirements">
+        <div class="container">
+            <h2>Requirements to Join</h2>
+            <div class="requirements-list">
+                <div class="requirement">
+                    <h3>Age</h3>
+                    <p>Must be 18 years or older</p>
+                </div>
+                <div class="requirement">
+                    <h3>Citizenship</h3>
+                    <p>Must be a legal citizen or permanent resident</p>
+                </div>
+                <div class="requirement">
+                    <h3>Background Check</h3>
+                    <p>Subject to thorough background investigation</p>
+                </div>
+                <div class="requirement">
+                    <h3>Training</h3>
+                    <p>Commitment to complete required training programs</p>
+                </div>
+                <div class="requirement">
+                    <h3>Physical Fitness</h3>
+                    <p>Must meet physical fitness standards</p>
+                </div>
+                <div class="requirement">
+                    <h3>Drug Test</h3>
+                    <p>Subject to drug screening and medical examination</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recruitment Section -->
+    <section id="recruitment" class="recruitment">
+        <div class="container">
+            <h2>Join the Department of Homeland Security</h2>
+            <div class="recruitment-content">
+                <p>Are you interested in serving your nation and protecting your community? The DHS is recruiting qualified individuals for multiple positions.</p>
+                <form class="application-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="discord">Discord Name *</label>
+                        <input type="text" id="discord" name="discord" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="position">Position of Interest *</label>
+                        <select id="position" name="position" required>
+                            <option value="">-- Select a Position --</option>
+                            <option value="agent">Special Agent</option>
+                            <option value="officer">Border Patrol Officer</option>
+                            <option value="inspector">Customs Inspector</option>
+                            <option value="pilot">Pilot</option>
+                            <option value="investigator">Investigator</option>
+                            <option value="cybersecurity">Cybersecurity Specialist</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Previous Experience</label>
+                        <textarea id="experience" name="experience" rows="4" placeholder="Tell us about your relevant experience..."></textarea>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <label for="agree">I agree to the terms and conditions *</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📍 Headquarters</h3>
+                    <p>Department of Homeland Security<br>Federal Building, Downtown</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📞 Phone</h3>
+                    <p>1-800-DHS-CALL</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p>recruitment@dhs.gov</p>
+                </div>
+                <div class="contact-item">
+                    <h3>💬 Discord</h3>
+                    <p>Join our Discord server for updates</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Department of Homeland Security. All rights reserved.</p>
+            <p>This is a roleplay website for FiveM servers.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
